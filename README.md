@@ -1,4 +1,4 @@
-# Premier_League_Team_Quiz
+# Premier League Team Quiz
 
 #### Description:
 
