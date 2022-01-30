@@ -1,0 +1,302 @@
+{% extends "layout.html" %}
+
+{% block title %}
+- Answer Personality Questions
+{% endblock %}
+
+{% block main %}
+    <div class="container-sm" style="width: 50rem;">
+
+        <form action="/results" method="post">
+
+                <div class="card" style="width: 30rem;">
+                <img class="card-img-top" src="https://i.imgur.com/0lxNFnr.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">What's your favorite food?</p>
+                </div>
+                </div>
+
+            <div class="form-group">
+                <div class="btn-group btn-group-toggle" role="group" data-toggle="buttons" name="question1" id="question1">
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="q1" value="9,8,5" id="option1" autocomplete="off"> Pizza
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="q1" value="6,12,7,15,2" id="option1" autocomplete="off"> Steak & Potatoes
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="q1" value="11,13,3,16" id="option1" autocomplete="off"> Burger
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="q1" value="10,4" id="option1" autocomplete="off"> Kebab
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="q1" value="1,14" id="option1" autocomplete="off"> Donuts
+                    </label>
+                </div>
+             </div>
+
+
+                <div class="card" style="width: 30rem;">
+                <img class="card-img-top" src="https://i.imgur.com/6M9ax5J.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">How do you feel about rivalries?</p>
+                </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="btn-group btn-group-toggle" role="group" data-toggle="buttons" name="question2" id="question2">
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q2" value="1,9,11,14,5" id="option2" autocomplete="off"> Love it
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q2" value="6,15,7,12" id="option2" autocomplete="off"> Enjoy it
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q2" value="16,2,8,10,2" id="option2" autocomplete="off"> Don't care
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q2" value="3,13,4" id="option2" autocomplete="off"> Avoid
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="card" style="width: 30rem;">
+                <img class="card-img-top" src="https://i.imgur.com/GgVWdZP.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">How important is it to win?</p>
+                </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons" name="question3" id="question3">
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q3" value="9,10,5,11" id="option3" autocomplete="off"> Very Important
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q3" value="15,1,14,8" id="option3" autocomplete="off"> Somewhat Important
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q3" value="3,12,2,16" id="option3" autocomplete="off"> Neutral
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q3" value="4,13,6,7" id="option3" autocomplete="off"> Not That Important
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="card" style="width: 30rem;">
+                <img class="card-img-top" src="https://i.imgur.com/is463XM.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Are tradition and history important to you?</p>
+                </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons" name="question4" id="question4">
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q4" value="9,11,2,1" id="option4" autocomplete="off"> Yes, very
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q4" value="12,6,5,14" id="option4" autocomplete="off"> Kinda
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q4" value="7,13,16,15" id="option4" autocomplete="off"> Don't Mind
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q4" value="3,4,10,8" id="option4" autocomplete="off"> No
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="card" style="width: 30rem;">
+                <img class="card-img-top" src="https://i.imgur.com/8AK9G8d.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">Would you consider yourself a hipster?</p>
+                </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons" name="question5" id="question5">
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q5" value="16,13,8,4,3" id="option5" autocomplete="off"> Very much
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q5" value="14,6,5,1" id="option5" autocomplete="off"> Not really
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q5" value="11,10,9,2" id="option5" autocomplete="off"> No
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q5" value="15,7,12" id="option5" autocomplete="off"> Hell no !
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="card" style="width: 30rem;">
+                    <img class="card-img-top" src="https://i.imgur.com/rFp7cWK.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Would you like a club that is well-liked by neutral supporters?</p>
+                    </div>
+                    </div>
+
+                <div class="form-group">
+                    <div class="btn-group btn-group-toggle" role="group" data-toggle="buttons" name="question6" id="question6">
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q6" value="8,1,16,13,4,3,12" id="option6" autocomplete="off"> Yes
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q6" value="10,14,15,9,2" id="option6" autocomplete="off"> Why not
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q6" value="11,5" id="option6" autocomplete="off"> Don't care
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q6" value="7" id="option6" autocomplete="off"> No
+                        </label>
+                    </div>
+                 </div>
+
+
+                 <div class="card" style="width: 30rem;">
+                    <img class="card-img-top" src="https://i.imgur.com/nCFJtiP.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">What's your favorite color?</p>
+                    </div>
+                    </div>
+
+                <div class="form-group">
+                    <div class="btn-group btn-group-toggle" role="group" data-toggle="buttons" name="question7" id="question7">
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q7" value="5,6,8,10,15" id="option7" autocomplete="off"> Blue
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q7" value="1,9,11" id="option7" autocomplete="off"> Red
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q7" value="14,7,12,13" id="option7" autocomplete="off"> White
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q7" value="16,2,3,4" id="option7" autocomplete="off"> Exotic Colors
+                        </label>
+
+                    </div>
+                 </div>
+
+
+                 <div class="card" style="width: 30rem;">
+                    <img class="card-img-top" src="https://i.imgur.com/KXsJvPi.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">What's your favorite drink?</p>
+                    </div>
+                    </div>
+
+                <div class="form-group">
+                    <div class="btn-group btn-group-toggle" role="group" data-toggle="buttons" name="question8" id="question8">
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q8" value="1,9,11" id="option8" autocomplete="off"> Coke
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q8" value="3,5,8" id="option8" autocomplete="off"> Energy Drink
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q8" value="10,14,6" id="option8" autocomplete="off"> Water
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q8" value="12,15,7" id="option8" autocomplete="off"> Beer
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q8" value="16,2,4,13" id="option8" autocomplete="off"> Orange Juice
+                        </label>
+                    </div>
+                 </div>
+
+
+                 <div class="card" style="width: 30rem;">
+                    <img class="card-img-top" src="https://i.imgur.com/3m9b2MV.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">What's your dream job?</p>
+                    </div>
+                    </div>
+
+                <div class="form-group">
+                    <div class="btn-group btn-group-toggle" role="group" data-toggle="buttons" name="question9" id="question9">
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q9" value="3,10,8,2" id="option9" autocomplete="off"> Anything tech-related
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q9" value="4,16,9,13" id="option9" autocomplete="off"> Artist
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q9" value="5,14,12,11" id="option9" autocomplete="off"> Banker
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q9" value="15,6,7,1" id="option9" autocomplete="off"> Nothing Fancy
+                        </label>
+                    </div>
+                 </div>
+
+
+                 <div class="card" style="width: 30rem;">
+                    <img class="card-img-top" src="https://i.imgur.com/BZa40ou.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">What's your ideal holiday activity?</p>
+                    </div>
+                    </div>
+
+                <div class="form-group">
+                    <div class="btn-group btn-group-toggle" role="group" data-toggle="buttons" name="question10" id="question10">
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q10" value="1,9,12,13,4" id="option10" autocomplete="off"> Beach
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q10" value="2,6,14" id="option10" autocomplete="off"> Museum / Reading
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q10" value="3,8" id="option10" autocomplete="off"> Sports
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q10" value="15,16,7" id="option10" autocomplete="off"> Visiting Family
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q10" value="5,10,11" id="option10" autocomplete="off"> Shopping
+                        </label>
+                    </div>
+                 </div>
+
+
+                 <div class="card" style="width: 30rem;">
+                    <img class="card-img-top" src="https://i.imgur.com/gy6bwWX.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Which country would you most like to live in?</p>
+                    </div>
+                    </div>
+
+                <div class="form-group">
+                    <div class="btn-group btn-group-toggle" role="group" data-toggle="buttons" name="question11" id="question11">
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q11" value="9,4,14,6,11" id="option11" autocomplete="off"> US
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q11" value="1,7,15,2" id="option11" autocomplete="off"> England
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q11" value="10,5,12" id="option11" autocomplete="off"> Dubai
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="q11" value="3,16,8,13" id="option11" autocomplete="off"> Japan
+                        </label>
+                    </div>
+                 </div>
+
+
+            <button class="btn btn-primary" type="submit">Submit!</button>
+        </form>
+
+    </div>
+
+{% endblock %}

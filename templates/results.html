@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    - Your Results
+{% endblock %}
+
+{% block main %}
+
+                <div class="card" style="width: 30rem;">
+                <br>
+                <img class="card-img-top2" src={{ imagelink}} alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Your new favorite team is <br><br></h5>
+                    <h3> {{ winner }} </h3>
+                    <br>
+                    <!--- {{ desc }} --->
+                    </p>
+                </div>
+                </div>
+                <br><br>
+                <form action="/quiz" method="get">
+                <button class="btn btn-outline-dark" type="submit">Retake the quiz</button>
+                </form>
+                <br>
+                <br>
+                <br>
+                <br>
+
+{% endblock %}

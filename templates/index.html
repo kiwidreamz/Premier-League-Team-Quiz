@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    - Greeting Page
+{% endblock %}
+
+{% block main %}
+
+                <div class="card" style="width: 30rem;">
+                <img class="card-img-top" src="https://i.imgur.com/Zh9IiGZ.jpg" alt="Card image cap">
+                <div class="card-body">
+                <br>
+                    <h4 class="card-title">Are you unsure which team to support?</h4><br>
+                    <p class="card-text">It is commonplace to support your local team or whatever team your family has ties to, but what if you're on the other side of the world and no one in your family likes football?
+                    <br><br>
+                    Take this short quiz to find out which team you should really support based on your personality, even if you already support a team!<br>
+                    <br>
+                    Assuming you'd want to watch games on TV or online, we won't be recommending teams from lower divisions or teams flirting with relegation every year, going down and coming back up the next (also known as a yo-yo club, such as Norwhich City).<br>
+                    <br>
+                    Furthermore, we won't be taking Burnley into account, as they play some of the most boring and depressive football you'll ever see and their own fans will be the first ones to admit it.
+                    They do make up for it by being some of the most dedicated fans out there though, but it's just not a team you'd want to be supporting if you're overseas as there are many more exciting options.<br>
+                    <br>
+                    Keep in mind, if you're unsure, you don't have to answer every single question for the test to work.
+                    <br>
+                    </p>
+                </div>
+                </div>
+                <br><br>
+                <form action="/quiz" method="get">
+                <button class="btn btn-outline-success" type="submit">Take the quiz!</button>
+                </form>
+                <br>
+                <br>
+
+{% endblock %}
