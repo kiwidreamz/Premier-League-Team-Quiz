@@ -2,9 +2,7 @@
 
 #### Video Demo:  <https://youtu.be/OS4DlCuPtRw>
 
-#### Access Link:
-
-<https://premierleagueteamquiz.pythonanywhere.com/>
+#### Access Link: <https://premierleagueteamquiz.pythonanywhere.com/>
 
 #### Description:
 
