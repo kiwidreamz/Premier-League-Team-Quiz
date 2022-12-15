@@ -44,7 +44,7 @@ When the user submits his/her answers, a SQL query will look for the team with t
 - Southampton 
 - Tottenham Hotspur 
 - West Ham United 
-- Wolves aka Wolverhampton Wanderers
+- Wolverhampton Wanderers
 
 
 #### Implementation:
