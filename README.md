@@ -25,7 +25,7 @@ When the user submits his/her answers, a SQL query will look for the team with t
 >
 >Furthermore, we won't be taking Burnley into account, as they play some of the most boring and depressive football you'll ever see and their own fans will be the first ones to admit it. They do make up for it by being some of the most dedicated fans out there though, but it's just not a team you'd want to be supporting if you're overseas as there are many more exciting options.
 >
->Keep in mind, if you're unsure, you don't have to answer every single question for the test to work.
+>Keep in mind that if you're unsure, you don't have to answer every single question for the test to work.
 
 #### Teams In The Database:
 
