@@ -49,7 +49,7 @@ When the user submits his/her answers, a SQL query will look for the team with t
 
 #### Implementation:
 
-The way I've implemented this is that I have a database with a list of all Premier League teams, minus some teams that get relegated often and I've given them a score, whose default value is zero.
+The way I've implemented this is that I have a database with a list of all Premier League teams, except some teams that get relegated often and I've given them a score, whose default value is zero.
 
 Every team has a unique id representing it and I have also paired every answer to each question with a list of ids.
 
