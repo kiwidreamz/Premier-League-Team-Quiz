@@ -51,7 +51,7 @@ When the user submits his/her answers, a SQL query will look for the team with t
 
 The way I've implemented this is that I have a database with a list of all Premier League teams, except some teams that get relegated often and I've given them a score, whose default value is zero.
 
-Every team has a unique id representing it and I have also paired every answer to each question with a list of ids.
+Every team has a unique id representing it and I have also paired every answer to each question with a list of IDs.
 
 As you start taking the quiz, you'll be asked a wide range of questions, whose main target is to gauge what kind of person you are and to find some personality traits.
 
